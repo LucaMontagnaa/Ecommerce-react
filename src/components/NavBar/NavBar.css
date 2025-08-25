@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header , nav {
+    display: flex;
+}
+
+header {
+    height: 8vh;
+}
+
+nav {
+    width: 100%;
+    justify-content: space-around;
+    background-color: #ddd;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: initial;
+}
+
+.menu {
+    gap: 3.5rem
+}
+
