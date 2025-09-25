@@ -38,7 +38,7 @@ export const CarritoProvider = ({children}) => {
 
 // ELIMINAR PRODUCTO
 
-const EliminarProducto = (id) => {
+const eliminarProducto = (id) => {
     const productoEliminado = carrito.find(prod => prod.item.id === id)
     const carritoActualizado = carrito.filter(prod => prod.item.id !== id)
 
@@ -56,7 +56,7 @@ const vaciarCarrito = () => {
 }
 
 return (
-    <CarritoContext.Provider value={{carrito, total, cantidadTotal, agregarAlCarrito, vaciarCarrito}}>
+    <CarritoContext.Provider value={{carrito, total, cantidadTotal, agregarAlCarrito, eliminarProducto, vaciarCarrito}}>
         {children}
     </CarritoContext.Provider>
 )

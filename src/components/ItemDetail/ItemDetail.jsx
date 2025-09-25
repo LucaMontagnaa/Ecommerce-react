@@ -11,9 +11,13 @@ const ItemDetail = ({id,nombre,precio,img,stock}) => {
   //Estado local con cantidad de productos agregados
   const [agregarCantidad, setAgregarCantidad] = useState(0)
 
+  const {agregarAlCarrito} = useContext(CarritoContext)
+
   //Función manejadora de la cantidad
   const manejadorCantidad = (cantidad) => {
     setAgregarCantidad(cantidad)
+    const item = {id,nombre,precio}
+    agregarAlCarrito(item,cantidad)
   }
 
   return (
