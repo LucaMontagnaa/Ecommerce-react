@@ -7,3 +7,15 @@
 .imgCarrito {
     height: 24px;
 }
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

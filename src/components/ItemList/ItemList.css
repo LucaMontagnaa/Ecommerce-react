@@ -8,7 +8,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 70vw;
+    max-width: 80vw;
+}
+
+
+@media screen and (min-width:720px) {
+    .contenedor-productos {
+        max-width: 70vw;
+    }
 }
 
 

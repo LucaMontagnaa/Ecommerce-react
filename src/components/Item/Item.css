@@ -11,9 +11,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 150px;
+    min-width: 90%;
     min-height: 300px;
     gap: 10px;
+    padding: 10px;
 }
 
 .imgContainer {
@@ -46,4 +47,11 @@
 
 .datos-container button:hover {
     outline: 1px solid #444;
+}
+
+
+@media screen and (min-width:720px) {
+    .cardProducto {
+        min-width: 150px;
+    }
 }
