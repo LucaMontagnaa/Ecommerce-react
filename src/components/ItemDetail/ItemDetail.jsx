@@ -5,6 +5,7 @@ import { useContext } from 'react'
 import { useState } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import { Link } from "react-router-dom"
+import { toast } from 'react-toastify'
 
 const ItemDetail = ({id,nombre,precio,img,stock}) => {
 
@@ -18,6 +19,7 @@ const ItemDetail = ({id,nombre,precio,img,stock}) => {
     setAgregarCantidad(cantidad)
     const item = {id,nombre,precio}
     agregarAlCarrito(item,cantidad)
+    toast.success("Su compra fue enviada al carrito", {autoClose:1500, theme:"colored", position:"top-center"}) 
   }
 
   return (

@@ -19,9 +19,6 @@ const ItemCount = ({inicial, stock, funcionAgregar}) => {
         }
     }
 
-    useEffect(()=>{
-        document.title = `contador: ${contador}`
-    },[contador])
 
   return (
     <>
