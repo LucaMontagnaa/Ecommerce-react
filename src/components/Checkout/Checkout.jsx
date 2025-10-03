@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { CarritoContext } from '../../context/CarritoContext'
 import { db } from '../../services/config'
 import { collection, addDoc } from 'firebase/firestore'
+import "./CheckOut.css"
 
 const Checkout = () => {
 
@@ -56,9 +57,9 @@ const Checkout = () => {
     }
 
   return (
-    <div>
+    <div className='checkout-container'>
         <h2>CheckOut:</h2>
-        <form onSubmit={manejadorFormulario}>
+        <form className='form-compra' onSubmit={manejadorFormulario}>
             <div>
                 <label htmlFor="">Nombre</label>
                 <input type="text" onChange={(e) => setNombre(e.target.value)}/>

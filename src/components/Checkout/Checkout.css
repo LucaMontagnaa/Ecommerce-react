@@ -1,0 +1,22 @@
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #bbb;
+    width: fit-content;
+    padding: 15px;
+    margin: auto;
+    gap: 20px;
+    margin-top: 15vh;
+    border-radius: 5px;
+}
+
+.form-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-compra div {
+    display: flex;
+    gap: 10px;
+}
